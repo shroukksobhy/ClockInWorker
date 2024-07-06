@@ -1,0 +1,85 @@
+{
+	"info": {
+		"_postman_id": "4541f2e6-d8f8-441a-b159-19300651c4fa",
+		"name": "BlueWorks Task",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "4151184"
+	},
+	"item": [
+		{
+			"name": "clock-in",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "worker_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "timestamp",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "latitude",
+							"value": "30.049326954219122",
+							"type": "text"
+						},
+						{
+							"key": "longitude",
+							"value": "31.24030256551094",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/worker/clock-in",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"worker",
+						"clock-in"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/worker/clock-ins/worker_id=1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"worker",
+						"clock-ins",
+						"worker_id=1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
